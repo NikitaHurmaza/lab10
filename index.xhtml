@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:view>
+   <head>
+      <title>Function Values</title>
+   </head>
+   <body>
+   <h:form>
+      <h:outputLabel value="a:"/>
+      <h:inputText value="#{logic.a}" />
+      <br/><br/>
+      <h:outputLabel value="step:"/>
+      <h:inputText value="#{logic.step}" />
+      <br/><br/>
+      <h:outputLabel value="begin:"/>
+      <h:inputText value="#{logic.begin}" />
+      <br/><br/>
+      <h:outputLabel value="end:"/>
+      <h:inputText value="#{logic.end}" />
+      <br/><br/>
+      <h:commandButton value="Show Values" action="#{logic.show()}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of max Y index:"/>
+      <h:outputText value="#{logic.valueMaxYIndex}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of max Y number:"/>
+      <h:outputText value="#{logic.valueMaxYNumber}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of min Y index:"/>
+      <h:outputText value="#{logic.valueMinYIndex}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of min Y number:"/>
+      <h:outputText value="#{logic.valueMinYNumber}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of min X number:"/>
+      <h:outputText value="#{logic.valueMinXNumber}"/>
+      <br/><br/>
+      <h:outputLabel value="Value of max X number:"/>
+      <h:outputText value="#{logic.valueMaxXNumber}"/>
+      <br/><br/>
+      <h:outputLabel value="Sum:"/>
+      <h:outputText value="#{logic.sum}"/>
+      <br/><br/>
+      <h:outputLabel value="Average:"/>
+      <h:outputText value="#{logic.average}"/>
+      <br/><br/>
+   </h:form>
+   </body>
+</f:view>
+</html>
